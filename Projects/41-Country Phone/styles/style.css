@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'vazir';
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+   height: 100vh;
+    }
+
+
+    .container {
+        width: 500px;
+        height: 600px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: .5rem;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 80%;
+        height: 80%;
+    }
+
+    label {
+        display: block;
+        color: gray;
+    }
+    input, select{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        outline: none;
+        background-color: #caedf4;
+        border: none;
+        color: #767676;
+        border-radius: 5px;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .box-group {
+        display: flex;
+        background-color: #caedf4;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .box-group p {
+        margin-left: 10px;
+        padding: .1rem;
+        color: #767676;
+        font-size: .7rem;
+        width: 40px;
+    }
+
+
+
+    .btn {
+        width: 100%;
+        padding: .5rem 2rem;
+        background-color: #8c45ea;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.5);
+        border-radius: 15px;
+        color: #fff;
+        transition: all .5s ease;
+    }
+
+    .btn:hover {
+        opacity: .9;
+    }

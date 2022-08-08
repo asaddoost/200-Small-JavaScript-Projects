@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    header {
+        width: 100vw;
+        height: 70px;
+        background-color: #9172ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+    }
+
+    .nav {
+        
+        width: 50%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    ul li a {
+        display: block;
+    }
+
+    .active {
+        background-color: #717171;
+        padding: .2rem .3rem;
+        border-radius: .3rem;
+    }
+
+    ul li.active a {
+        color: white;
+    }
+
+    section {
+        width: 100vw;
+        height: 100vh;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home {
+
+        background-color: #57985c;
+    }
+    #product {
+
+        background-color: #767be2;
+    }
+    #contact {
+
+        background-color: #98578a;
+    }
+    #about {
+
+        background-color: #b09d22;
+    }

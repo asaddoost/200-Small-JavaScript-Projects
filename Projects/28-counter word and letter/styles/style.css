@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+    height: 100vh;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        box-shadow: 0 0 15px 0 rgba('0,0,0,.5');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .container textarea {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    .count {
+        position: absolute;
+        width: 550px;
+        height: 70px;
+        background-color: rgb(181, 242, 240);
+        bottom: -25px;
+        left: -25px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0 rgba('0,0,0,.5');
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+
+    }
+
+    .count div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    .count h5 {
+        font-size: 1.2rem;
+    }
+
+
+ 
+    

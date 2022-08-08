@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+  body{
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(217, 215, 215);
+      }
+/* --------------------start-------------- */
+      header {
+          width: 100%;
+          background-color: rgb(0, 128, 113);
+          padding: 4rem;
+          text-align: right;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      
+      section {
+        width: 100%;
+        background-color: rgb(85, 112, 149);
+        padding: 4rem;
+        text-align: right;
+        height: 600px;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+    }
+
+    p {
+        width: 80%;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: rgb(227, 127, 247);
+        z-index: 2;
+        color: black;
+        padding: 2rem;
+        font-size: 1.5rem;
+        transition: all .5s ease-in-out;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        border-bottom: 1px solid rgb(103, 94, 94);
+        padding-top: .5rem;
+        background-color: rgb(213, 144, 144);
+        padding: .5rem;
+        transition: all .5s ease-in-out;
+    }
+
+    li:hover {
+        background-color: rgb(98, 116, 215);
+    }
+
+    a {
+        display: block;
+
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .btn {
+        position: absolute;
+        top: 40px;
+        right: -46px;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        background-color: rgb(143, 119, 148);
+        border-bottom: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+
+    }
+
+     .fas {
+     animation: fa-spin 2s infinite linear;
+     }
+    
+
+
+
+
+
+

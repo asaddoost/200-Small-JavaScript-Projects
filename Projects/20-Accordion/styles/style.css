@@ -1,0 +1,58 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+     url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+   background-color: rgb(184, 165, 242);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 700px;
+    margin: 150px auto;
+
+}
+
+.accordion .accordion-title{
+    background: #798484;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin: .2rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.accordion .accordion-title::before{
+    content: '+';
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.accordion .accordion-title.active::before{
+    content: '-' !important;
+    margin-left: 16px;
+}
+
+.accordion .accordion-content{
+    background: #e8e5e5;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+
+}
+
+.accordion .accordion-content.active{
+    padding: 2rem;
+}

@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+    padding: 1rem;
+    }
+
+    .nav {
+        max-width: 800px;
+        height: 70px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem;
+        border-radius: 15px;
+        position: absolute;
+        top: 30px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+    }
+
+    div a {
+        padding: .5rem 2rem;
+        color: rgb(36, 36, 36);
+        border-radius: 2rem;
+        transition: all .5s ease-in-out;
+        
+    }
+
+    .active {
+        background-color: #6d81d2;
+        color: #fff;
+    }
+
+    img {
+        width: 130px !important;
+        height: 150px !important;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: all 1s ease-in-out;
+    
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 1200px;
+        height: 600px;
+        background-color: #FCF8E8;
+        margin-top: 8rem;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+        transition: all .5s ease-in-out;
+    }
+
+    .card {
+        width: 200px;
+        height: 270px;
+        background-color:#94B49F;
+        border-radius: 15px;
+        box-shadow: 0px 0px 17px 0px rgba(109, 109, 109, 0.5);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        overflow: hidden;
+        
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    h2 {
+        color: green;
+        font-size: .9rem;
+    }
+
+
+
+

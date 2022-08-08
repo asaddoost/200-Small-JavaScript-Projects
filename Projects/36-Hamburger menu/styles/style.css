@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    }
+
+
+
+    .nav {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        border-radius: 10px;
+        box-shadow: 0 0 29px rgba(0,0,0,.6);
+        background-color:#ffff;
+        color: rgb(72, 72, 72);
+        display: flex;
+        justify-content: center;
+       
+
+    }
+
+
+    .btn {
+        position: absolute;
+        top: 15%;
+        right: -80px;
+        width: 40px;
+        height: 40px;
+        padding: .5rem;
+        background: url('../img/hamburger.svg') no-repeat center center;
+        cursor: pointer;
+        background-size: 50%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 17px 0px rgba(0,0,0,.6) ;
+        background-color: #fff;
+        transition: all .5s ease-in-out;
+    }
+
+
+    ul {
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        transition: all .5s ease-in-out;
+        transform: translateX(50px);
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
+        overflow: hidden;
+        padding: 20px;
+        
+    }
+    ul li a {
+        color: rgb(61, 61, 61);
+    }
+
+    /* ----- add close show ----- */
+    .nav.show ul {
+        width: 400px;
+        opacity: 1;
+        transform: translateX(0px);
+        visibility: visible;
+    }
+
+   
+/* ---------- add class btnClose -------- */
+    .btnClose {
+        background: url('../img/close.svg') no-repeat center center; 
+        background-size: 50%;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: rotate(180deg);
+    }
+

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+  body{
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgb(126, 194, 221);
+      }
+
+      .group {
+        background-color: rgb(183, 238, 228);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .group svg {
+          font-size: 1.5rem;
+          margin-right: .5rem;
+          cursor: pointer;
+          opacity: .6;
+      }
+      .group svg:hover {
+        
+        opacity: 1;
+    }
+
+
+
+      h2 {
+          margin-bottom: 2rem;
+      }
+      input {
+          border: none;
+          padding: 1rem;
+          width: 300px;
+          visibility: visible;
+          background-color: transparent;
+          outline: none;
+          font-weight: 700;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .fa-eye-slash {
+          display: none;
+      }
+
+      .hide .fa-eye {
+          display: none;
+      }
+      .hide .fa-eye-slash {
+        display: block;
+    }
+
+
+
+
+
+
+

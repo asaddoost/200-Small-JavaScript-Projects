@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+    height: 100vh;
+    }
+
+
+ .drag-area {
+    width: 400px;
+    height: 300px;
+    border: 2px dotted rgb(137, 137, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: grab;
+    transition: all .5s ease-in-out;
+ }
+
+ .active {
+    border-color: #d0fcd0;
+ }
+ .drag-area.active .icon svg,
+ .drag-area.active .title{
+    color: #d0fcd0;
+ } 
+
+ .drag-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+ }
+
+ .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+ }  
+ .icon svg {
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    color: #4e4e90;
+    transition: all .5s ease-in-out;
+ }
+
+ .title {
+    color: #ebebeb;
+    transition: all .5s ease-in-out;
+ }
+
+ .btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px #00000080;
+    border-radius: 10px;
+    transition: transform .7s ease;
+    cursor: pointer;
+
+ }
+
+ .btn:hover {
+    transform: scale(1.06);
+ }
+
+ 

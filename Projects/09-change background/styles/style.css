@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+  body{
+      font-family: 'vazir';
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgb(177, 178, 219);
+      }
+
+      .box {
+          width: 250px;
+          background-color: rgb(151, 179, 164);
+          height: 40px;
+          position: absolute;
+          top: 50px;
+          right: 100px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: .3rem;
+      }
+
+      a {
+          width: 30px;
+          height: 30px;
+          background-color: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          /* ---------------------point-------------- */
+          /* عدم نمایش متن */
+          text-indent: -9999px;
+      }
+
+      #blue {
+          background-color:#0003ce;
+      }
+      #red {
+          background-color:#FF0000;
+      }
+     #green {
+          background-color: #008000;
+      }
+      #orange {
+          background-color: #FFA500;
+      }
+      #purple {
+          background-color:#B1B2DB;
+      }
+
+
+
+

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'); 
+    src: url('../fonts/vazir.ttf')  format('truetype'), 
+         url('../fonts/vazir.woff2') format('woff2'), 
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-family: 'vazir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 159, 241);
+    width: 100%;
+    height: 100vh;
+    }
+
+    .logo {
+        width: 350px;
+        height: 100px;
+        border-radius: 3px;
+        box-shadow: 0 0 10px 15px 0 rgba(0,0,0,.3);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        opacity: .5;
+        transition: opacity .5s ease;
+    }
+
+ 
+    
